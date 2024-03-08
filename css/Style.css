@@ -1,0 +1,383 @@
+body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, img {margin:0;padding:0;border:0;list-style: none;}
+body{font-family:"微软雅黑",Arial, Helvetica, sans-serif; font-size:14px;}
+a{color:#999;text-decoration: none;}
+a:hover{color:#fff;}
+input,textarea{outline: none;}
+ @font-face {
+	font-family: 'freshskin';
+    src:url('file:///C|/Users/h%27p/AppData/Local/Temp/360zip$Temp/fonts/iconfont.ttf');
+}  
+/* videobox */
+ .videobox{
+	width:100%;
+	height:80%;
+	overflow: hidden;
+	position: relative;
+	margin: 0px auto;
+}
+
+.videobox video{
+	width:100%;
+	min-width: 1280px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.videobox header{
+	width:100%;
+	height:40px;
+	background: #333;
+	z-index: 999;
+	position: absolute;
+}
+.videobox header .con{
+	width:1030px;
+	height:40px;
+	margin:0 auto;
+}
+.videobox header .left{
+	width:75px;
+	height:20px;
+	background:url("新建文件夹/logo1 - 副本.jpg") 0 0 no-repeat;
+	margin-top: 10px;
+	float: left;
+}
+.videobox header .right{
+	margin-top: 10px;
+	float: right;
+	font-family: "freshskin";
+}
+.videobox header .right a{margin-right: 10px;}
+.videobox nav{
+	width:100%;
+	height:90px;
+	background: rgba(0,0,0,0.2);
+	z-index: 1000;
+	position: absolute;
+	top:40px;
+	border-bottom: 1px solid #fff;
+}
+.videobox nav ul{
+	width:1030px;
+	height:90px;
+	margin:0 auto;
+	position: relative;
+}
+.videobox nav ul li{
+	float: left;
+	margin-right: 19%;
+}
+.videobox nav ul .left:hover aside{display: block;}
+.videobox nav ul .left a{
+	display: block;
+	height:90px;
+	line-height: 90px;
+	font-size: 20px;
+	color:#fff;
+}
+.videobox nav ul .left a img{vertical-align: middle;}
+.videobox nav ul .left a span{margin:0 10px;}
+.videobox aside{
+	display: none;
+	width:380px;
+	height:560px;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	left:0;
+	top:90px;
+	z-index: 1500;
+	color:#fff;
+}
+.videobox aside span{
+	width:20px;
+	height:14px;
+	background:url("新建文件夹/liebiao.png") 0 0 no-repeat;
+	position: absolute;
+	left:50px;
+	top:0;
+}
+.videobox aside ol{
+	width:155px;
+	float: left;
+}
+.videobox aside ol li{
+	width:155px;
+	height:25px;
+	line-height: 25px;
+	cursor: pointer;
+	font-family: "宋体";
+}
+.videobox aside ol li.con{
+	font-size: 16px;
+	text-indent: 0;
+	font-family: "微软雅黑";
+	padding: 10px 0;
+}
+.videobox aside ol li:hover{color:#fff;}
+.videobox aside .zuo{margin:35px 0 0 68px;}
+.videobox aside .you{margin-top: 35px;}
+.videobox aside img{margin:10px 0 0 13px;}
+.videobox nav ul .center{margin-top: 32px;}
+.videobox nav ul .center input{
+	width:240px;
+	height:30px;
+	border:1px solid #fff;
+	border-radius: 15px; 
+	color:#fff;
+	line-height: 32px;
+	background: rgba(0,0,0,0);
+	padding-left: 30px;
+	box-sizing:border-box;
+	background:url("新建文件夹/search.png") no-repeat 3px 3px;
+	outline: none;
+}
+.videobox nav ul .right{
+	margin-top: 32px;
+	width:280px;
+	height:32px;
+	margin-right:0;
+	font-family: "freshskin";
+	text-align: center;
+	line-height: 32px;
+	font-size: 16px;
+} 
+.videobox nav ul .right a{
+	display: inline-block;
+	width:32px;
+	height:32px;
+	color:#fff;
+	box-shadow: 0 0 0 1px #fff inset;
+	transition:box-shadow 0.3s ease 0s; 
+	border-radius: 16px; 
+	margin-left: 30px;
+}
+.videobox nav ul .right a:hover{
+	box-shadow: 0 0 0 16px #fff inset; 
+	color:#C1DCC5;
+}
+
+.videobox .pic ul .one{
+	line-height: 56px;
+	position: relative;
+	left: -1920px;
+	top:40px;
+	opacity: 0;
+	transition:all 2s ease-in 0s;
+}
+.videobox .pic ul .two{
+	line-height: 56px;
+	position: relative;
+	left: 1920px;
+	top:40px;
+	opacity: 0;
+	transition:all 2s ease-in 0s;
+}
+body:hover .videobox .pic ul .one{
+	position: relative;
+	left:100px;
+	top:40px;
+	opacity:0.8;
+}
+body:hover .videobox .pic ul .two{
+	position: relative;
+	left:300px;
+	top:40px;
+	opacity:0.8;
+}
+.videobox .pic ul .one span,.videobox .pic ul .two span{
+	float: left;
+	width:40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 20px;
+	margin:8px 10px 0 10px;
+	box-shadow: 0 0 0 1px #90c197 inset;
+	transition:box-shadow 0.3s ease 0s;
+	font-family: "freshskin";
+	font-weight: bold;
+	color:#90c197;
+}
+.videobox .pic ul .two span{margin:8px 30px 0 10px;}
+
+.videobox .pic ul .one:hover span,.videobox .pic ul .two:hover span{
+	box-shadow: 0 0 0 20px #90c197 inset;
+	color:#fff;
+} 
+.ToTu{
+	width:1500px;
+	margin: 0px auto;
+}
+.ToTu img{
+	width:1500px;
+	height:920px;
+	margin: 0px auto;
+}
+.Course h1{
+	text-align: center;
+	line-height:80px;
+}
+
+
+
+
+
+
+
+
+
+/* 显示旋转 */
+#xianshi{
+	/* border: 1px solid red; */
+	width:900px;
+	margin: 0px auto;
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.box {
+  flex: 1;
+  position: relative;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+.box img {
+	width:300px;
+	height:300px;
+	transition: opacity 0.5s;
+}
+.overlay {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: top 0.5s, opacity 0.5s;
+}
+.overlay.active {
+  top: 0;
+  opacity: 1;
+}
+.overlay img {
+  width:300px;
+  height:300px;
+}
+
+#WeiBu{
+	/* border: 1px solid red; */
+	margin-top:1100px;
+}
+#WenBen div{
+	/* border: 1px solid red; */
+	width:295px;
+	/* height:30px; */
+	display: inline-block;
+	text-align: center;
+	line-height:30px;
+}
+#disanbufen{
+	text-align: center;
+	width:600px;
+	margin: 0px auto;
+	font-size:20px;
+	font-weight:700;
+}
+
+
+
+
+
+
+
+/* new */
+.new{
+	width:100%;
+	height:530px;
+	background: #fff;
+}
+.new header{
+	width:385px;
+	height: 95px;
+	background: #f7f7f7;
+	border-radius: 48px;
+	margin:70px auto 0;
+	box-sizing:border-box;
+	padding:2px 0 0 35px;
+}
+/* footer */
+ footer{
+	width:100%;
+	height:400px;
+	background: #545861;
+	border-bottom: 1px solid #fff;
+}
+footer .logo{
+	width:1000px;
+	height:100px;
+	margin:0 auto;
+	background: url() no-repeat center center;
+	border-bottom: 1px solid #8c9299;
+}
+footer .message{
+	width:1000px;
+	margin:20px auto 0;
+	color:#fffada;
+}
+footer .message .left{
+	width:525px;
+	float: left;
+	padding-left: 30px;
+	box-sizing:border-box;
+}
+footer .message .left li{
+	float: left;
+	margin-right: 30px;
+}
+footer .message .left li input{
+	width:215px;
+	height:32px;
+	border-radius: 5px;
+	margin:10px 0 15px 0;
+	padding-left: 10px;
+	box-sizing:border-box;
+	border:none;
+}
+footer .message .left li:last-child input{
+	width:120px;
+	height:39px;
+	padding-left: 0;
+	border:none;
+	background: url("../img/sanxian.png") no-repeat;
+	}
+footer .message .right{
+	float: left;
+}
+footer .message .right p{
+	margin-bottom: 10px;
+}
+footer .message .right textarea{
+	width:400px;
+	height:172px;
+	padding:10px;
+	box-sizing:border-box;
+	resize:none;
+}
+/* footer */
+/* banquan */
+.banquan{
+	width:100%;
+	height:60px;
+	background: #333333;
+	text-align: center;
+}
+.banquan a{line-height: 60px;}
+/* banquan */
